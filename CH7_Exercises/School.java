@@ -2,8 +2,13 @@ package CH7_Exercises;
 import java.util.*;
 public class School {
     //is this instance variable and constructor correct for the "School" class?
-    ArrayList<Student> studentList = new ArrayList<Student>();
-    public School(ArrayList studentList){
+    ArrayList<Student> studentList; 
+
+    //added
+    public School (){
+        studentList = new ArrayList<>()
+    }
+    public School(ArrayList<Student> studentList){   //revised
         this.studentList = studentList;
     }
     public void addStudent(Student student){
